@@ -32,7 +32,7 @@ function onSignIn(googleUser) {
         type: "POST"
     });
 
-    window.location.href = "http://localhost/www/home.html";
+    window.location.href = "http://localhost/www/dashboard.html";
 };
 
 function getUser() {
