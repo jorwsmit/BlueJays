@@ -14,13 +14,13 @@ if ($_SERVER["REQUEST_METHOD"] == "GET"){
     
 } else if ($_SERVER["REQUEST_METHOD"] == "POST"){
     
-    if (db_select("StudentTutor", "google_id", $data["google_id"]) == NULL){
-        db_insert("StudentTutor", $data);   
+    if (db_select("Courses", "course_id", $data["course_id"]) != NULL){
+        db_insert("StudentCoursesRelation", $data);   
     }
     
     
 } else if ($_SERVER["REQUEST_METHOD"] == "PUT"){
-    db_update("StudentTutor", $data, "google_id");
+    db_update("StudentCourseRelation", $data, "email");
 }
 
 ?>
