@@ -1,0 +1,6 @@
+iframe {
+    background-image: url("../img/loading.gif");
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: center center;
+}
